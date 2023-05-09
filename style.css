@@ -23,8 +23,10 @@ body {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.5;
-    color: green;
-    font-family: ""Gliroy", sans-serif !important;
+    color: rgb(18, 141, 12);
+    font-family: "Gliroy", sans-serif !important;
+    font-weight: bold;
+
   }
   
   
@@ -33,5 +35,40 @@ body {
       width: 100%;
     }
   }
+
+  .upcoming-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .upcoming-list li {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(118, 126, 118);
+    font-family: "Gliroy", sans-serif !important;
+  }
   
   
+  @media (max-width: 767px) {
+    .upcoming-list li {
+      width: 100%;
+    }
+  }
+  
+  .logo-img {
+    width: 680px;
+    height: 340px;
+    margin-right: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateY(1deg) rotateX(-10deg);
+    box-shadow: 1000 1000 1000px rgb(0, 0, 0);
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
